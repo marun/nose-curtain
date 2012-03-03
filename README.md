@@ -16,4 +16,4 @@
 
 # Installation
 
-  pip install -e git+git://github.com/marun/nose-unitfail.git#egg=nose-unitfail
+      pip install -e git+git://github.com/marun/nose-unitfail.git#egg=nose-unitfail
