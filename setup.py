@@ -18,11 +18,11 @@ version = "0.1"
 
 setup(name="nose-unitfail",
       version=version,
-      description="Removes the final unittest frame from the traceback used for  post-mortem debugging nose failures",
+      description="Removes the final unittest frame from the traceback used for post-mortem debugging nose failures",
       keywords="nose",
       author="Maru Newby",
       author_email="mnewby@thesprawl.net",
-      url="https://github.com/mnewby/nose-unitfail",
+      url="https://github.com/marun/nose-unitfail",
       license="Apache Software License",
       packages=find_packages(exclude=["ez_setup", "examples", "tests"]),
       install_requires=[

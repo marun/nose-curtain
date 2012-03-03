@@ -13,3 +13,7 @@
       nosetests --pdb-failure --with-unitfail
 
   Voila! TestCase.assert* failures will now debug from the assertion call.
+
+# Installation
+
+  pip install -e git+git://github.com/marun/nose-unitfail.git#egg=nose-unitfail
