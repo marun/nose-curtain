@@ -2,13 +2,13 @@ from setuptools import setup, find_packages
 
 version = "0.5"
 
-setup(name="nose-unitfailure",
+setup(name="nose-unitfail",
       version=version,
-      description="Removes unittest traceback frame from failure post-mortem debugging",
+      description="Removes the final unittest frame from the traceback used for  post-mortem debugging nose failures",
       keywords="nose",
       author="Maru Newby",
       author_email="mnewby@internap.com",
-      url="https://github.com/mnewby/nose-unitfailure",
+      url="https://github.com/mnewby/nose-unitfail",
       license="Apache Software License",
       packages=find_packages(exclude=["ez_setup", "examples", "tests"]),
       install_requires=[
@@ -16,7 +16,7 @@ setup(name="nose-unitfailure",
       ],
       entry_points={
           'nose.plugins': [
-              'unitfailure = noseunitfailure:UnitFailureFormatter'
+              'unitfail = noseunitfail:UnitFailureFormatter'
               ]
           }
       )
