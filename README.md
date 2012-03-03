@@ -6,7 +6,7 @@
   It's a shame, though, that nose's post-mortem debugging of assertion
   failures drops one into the assertion method's definition rather
   than the assertion call.  Sanity is achieved by hitting 'u' and
-  '<enter>', but what if you're too lazy?
+  'enter', but what if you're too lazy?
 
   nose-unitfail to the rescue!  Install this package and invoke nose thusly:
 
