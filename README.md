@@ -9,7 +9,7 @@
   originating call.  Sanity is achieved by executing 'u' a bunch of
   times in pdb, but what if you're too lazy?
 
-  nose-curtain to the rescue!  Install this package and invoke nose thusly:
+  nose-curtain to the rescue!  Install this plugin and invoke nose thusly:
 
       nosetests --pdb --pdb-failure --with-curtain
 
@@ -22,15 +22,15 @@
 
 # Configuration
 
-  The plugin filters tracebacks with filenames that end with any of a
-  list of ignored filenames.  By default, the following filenames are
-  ignored:
+  The plugin filters tracebacks whose fully qualified filenames end
+  with any of a list of ignored filenames.  By default, the following
+  filenames are ignored:
 
       mox.py
       unittest.py
       unittest2/case.py
 
-  The list of ignored files can be overriden by providing a value to
+  The list of ignored filenames can be overriden by providing a value to
   curtain-filenames, either on the command line:
 
       nosetests --pdb --pdb-failure --with-curtain --curtain-filenames=mox.py,unitest.py,unittest2/case.py
