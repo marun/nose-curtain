@@ -16,7 +16,7 @@
   Voila! Failures and errors that were triggered by a testing library
   will now debug from the call rather than the library.
 
-# What?
+## What?
 
   Given the following test code:
 
@@ -35,16 +35,16 @@
   source of the failure.  With the plugin, the active stackframe will
   be at test_foo as one would expect.
 
-# I still don't get it
+## I still don't get it
 
-    Not so fast. NOT SO FAST! I'll have to give the matter a little
-    thought. Go away and come back tomorrow.
+ Not so fast. NOT SO FAST! I'll have to give the matter a little
+ thought. Go away and come back tomorrow.
 
-# Installation
+## Installation
 
       pip install -e git+git://github.com/marun/nose-curtain.git#egg=nose-curtain
 
-# Configuration
+## Configuration
 
   The plugin filters tracebacks whose fully qualified filenames end
   with any of a list of ignored filenames.  By default, the following
