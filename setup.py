@@ -25,9 +25,9 @@ setup(name="nose-curtain",
       url="https://github.com/marun/nose-curtain",
       license="Apache Software License",
       packages=find_packages(exclude=["ez_setup", "examples", "tests"]),
-      install_requires=[
-          "nose",
-      ],
+      install_requires=['nose'],
+      test_suite='nose.collector',
+      tests_require=['nose', 'unittest2', 'mock'],
       entry_points={
           'nose.plugins': [
               'curtain = nosecurtain:Curtain'
