@@ -16,13 +16,13 @@ from setuptools import setup, find_packages
 
 version = "0.1"
 
-setup(name="nose-unitfail",
+setup(name="nose-curtain",
       version=version,
-      description="Removes the final unittest frame from the traceback used for post-mortem debugging nose failures",
+      description="Filters testing library tracebacks from post-mortem debugging sessions.",
       keywords="nose",
       author="Maru Newby",
       author_email="mnewby@thesprawl.net",
-      url="https://github.com/marun/nose-unitfail",
+      url="https://github.com/marun/nose-curtain",
       license="Apache Software License",
       packages=find_packages(exclude=["ez_setup", "examples", "tests"]),
       install_requires=[
@@ -30,7 +30,7 @@ setup(name="nose-unitfail",
       ],
       entry_points={
           'nose.plugins': [
-              'unitfail = noseunitfail:UnitFailureFormatter'
+              'curtain = nosecurtain:Curtain'
               ]
           }
       )

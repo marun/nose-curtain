@@ -1,4 +1,4 @@
 *.pyc
 *.DS_Store
 build/*
-nose_unitfail.egg-info/
+nose_curtain.egg-info/
