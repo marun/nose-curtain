@@ -1,8 +1,8 @@
-# Pay no attention to that man behind the curtain
+# Pay no attention to that man behind the curtain!
 
   Running tests with nose is great!  Extending unittest.TestCase and
   unittest2.TestCase and using their assert*() methods is nifty!
-  Using mocking tools like mox is fun!
+  Using mocking tools is fun!
 
   It's a shame, though, that nose's post-mortem debugging drops one
   into the assertion or mocking method's definition rather than the
@@ -15,6 +15,30 @@
 
   Voila! Failures and errors that were triggered by a testing library
   will now debug from the call rather than the library.
+
+# What?
+
+  Given the following test code:
+
+      class TestFoo(unittest2.TestCase):
+
+          def test_foo(self):
+              self.assertFalse(True)
+
+  And executing the test with:
+
+      nosetests --pdb-failure
+
+  Nose will start a post-mortem debugging session when it encounters
+  the assertion failure.  Without this plugin, the active stackframe
+  will be at unittest2/case.py's assertFalse method, which is not the
+  source of the failure.  With the plugin, the active stackframe will
+  be at test_foo as one would expect.
+
+# I still don't get it
+
+    Not so fast. NOT SO FAST! I'll have to give the matter a little
+    thought. Go away and come back tomorrow.
 
 # Installation
 
