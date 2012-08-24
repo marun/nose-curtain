@@ -23,6 +23,7 @@ __all__ = ['Curtain']
 default_ignored_filenames = [
     'mox.py',
     'unittest.py',
+    os.path.join('unittest', 'case.py'),
     os.path.join('unittest2', 'case.py'),
     ]
 
